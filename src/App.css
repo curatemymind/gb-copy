@@ -1,0 +1,377 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+
+
+* {
+  line-height: 70%;
+  
+ /* cursor:url("media/GHOST1.png"), auto;
+  -webkit-animation: cursor 400ms infinite;
+  animation: cursor 400ms infinite;*/
+}
+
+
+
+
+
+@-webkit-keyframes cursor {
+  20% {cursor: url("media/GHOST1.png"), auto;}
+  40% {cursor: url("media/GHOST2.png"), auto;}
+  60% {cursor: url("media/GHOST3.png"), auto;}
+  80% {cursor: url("media/GHOST4.png"), auto;}
+  100% {cursor: url("media/GHOST5.png"), auto;}
+} 
+
+@keyframes cursor {
+  20% {cursor: url("media/GHOST1.png"), auto;}
+  40% {cursor: url("media/GHOST2.png"), auto;}
+  60% {cursor: url("media/GHOST3.png"), auto;}
+  80% {cursor: url("media/GHOST4.png"), auto;}
+  100% {cursor: url("media/GHOST5.png"), auto;}
+}
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@font-face {
+  font-family: ghostboy;
+  src: url("fonts/Ghostboy-Regular.ttf");
+}
+
+* {
+  font-family: ghostboy;
+  color: black;
+
+}
+
+.collective {
+  font-family: 'Space Mono', monospace !important;
+  line-height: 100%;
+}
+
+
+body {
+  background-color: white;
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#next {
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#TheArtist:hover > :first-child {
+  fill: #231F20;
+}
+
+#TheArtist:hover > :not(:first-child) {
+  fill: white;
+  stroke: white;
+}
+
+#Utility:hover > :first-child {
+  fill: #231F20;
+
+}
+
+#Utility:hover > :not(:first-child) {
+  fill: white;
+  stroke: white;
+}
+
+
+#Art:hover > :first-child {
+  fill: #231F20;
+
+}
+
+#Art:hover > :not(:first-child) {
+  fill: white;
+  stroke: white;
+}
+
+
+
+
+#Team:hover > :first-child {
+  fill: #231F20;
+
+}
+
+#Team:hover > :not(:first-child) {
+  fill: white;
+  stroke: white;
+}
+
+
+#GhostList:hover > :first-child {
+  fill: #231F20;
+
+}
+
+#GhostList:hover > :not(:first-child) {
+  fill: white;
+  stroke: white;
+}
+
+
+#Mint:hover > :first-child {
+  fill: #231F20;
+
+}
+
+#Mint:hover > :not(:first-child) {
+  fill: white;
+  stroke: white;
+}
+
+#LearnMore:hover > path:first-child {
+  fill: #231F20;
+}
+
+#LearnMore:hover > path:not(:first-child) {
+  fill: white;
+}
+
+#ReadTheFullThread:hover > path:first-child {
+  fill: #231F20;
+}
+
+#ReadTheFullThread:hover > path:not(:first-child) {
+  fill: white;
+}
+
+#OpenSea:hover > path:first-child {
+  fill: #231F20;
+}
+
+#OpenSea:hover > path:not(:first-child) {
+  fill: white;
+}
+
+#AlphaLabs:hover > path:first-child {
+  fill: #231F20;
+}
+
+#AlphaLabs:hover > path:not(:first-child) {
+  fill: white;
+}
+
+#Twitter:hover > path:first-child {
+  fill: #231F20;
+}
+
+#Twitter:hover > path:not(:first-child) {
+  fill: white;
+}
+
+#Contact:hover > path:first-child {
+  fill: #231F20;
+}
+
+#Contact:hover > path:not(:first-child) {
+  fill: white;
+}
+
+#AlphaLabsText:hover> :not(:first-child) {
+  fill: gray;
+}
+
+#Summon:hover > :first-child {
+  fill: #ea23bc;
+}
+
+#Summon:hover > :not(:first-child) {
+  fill: white;
+  stroke: white;
+}
+
+#SummonMobile:hover > :first-child {
+  fill: #ea23bc;
+}
+
+#SummonMobile:hover > :not(:first-child) {
+  fill: white;
+  stroke: white;
+}
+
+#wallet:hover {
+  opacity: 60%;
+}
+
+#volumeButton:hover {
+  opacity: 60%;
+}
+
+#playButton:hover {
+  opacity: 60%;
+}
+
+#pauseButton:hover  {
+  opacity: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+button:hover {
+  fill: black;
+}
+
+#submitButton:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  color: gray;
+  -webkit-animation: 2s ease 0s normal forwards 1 fadeIn;
+  animation: 2s ease 0s normal forwards 1 fadeIn;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+#sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 1rem;
+  margin: 0 auto;
+  
+
+
+}
+
+#mintGhost {
+  animation-name: floating2;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+#mobileMintGhost {
+  animation-name: floating2;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#ghost { 
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 50% !important;
+  
+}
+
+#ghost2 { 
+
+  animation-name: floating2;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 50% !important;
+  
+}
+
+.bm-burger-button {
+  color: black;
+}
+
+
+@keyframes floating {
+  0% {   transform: scale(.7);}
+  50%  { transform: scale(.7) translate(0, 15px); ;}
+  100%   {   transform: scale(.7); ;}   
+}
+
+@keyframes floating2 {
+  0% {   transform: translate(0, 0px);}
+  50%  { transform: translate(0, 15px); ;}
+  100%   {   transform: translate(0, 0px); ;}   
+}
+
